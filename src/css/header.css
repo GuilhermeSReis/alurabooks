@@ -1,0 +1,81 @@
+
+.cabecalho{
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1em; */
+}
+
+.cabecalho__menu-hamburguer{
+    display: inline-block ;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    padding: 1.5rem;
+    
+    
+    
+}
+
+.cabecalho__logo{
+    width: 30px;
+}
+
+.cabecalho__img{
+    width: 40px;
+    padding: 5px;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 60vw;
+    
+}
+
+/* Quando o botão for clicado é adicionado uma propriedade em um outro elemento */
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+
+
+
+
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--cor-branco);
+    text-transform: uppercase;
+
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    text-decoration: none;
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+    
+}
+
