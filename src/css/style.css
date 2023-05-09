@@ -1,5 +1,6 @@
 /* Iportação de outros Css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
 
 @import url("./header.css");
 @import url("./banner.css");
@@ -16,7 +17,9 @@
     --laranja:#EB9B00;
     --azul-degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --azul:#002F52;
-    --fonte-pops:'Poppins', sans-serif;;
+    --fonte-pops:'Poppins', sans-serif;
+    --fonte-Josefin:'Josefin Sans', sans-serif;
+    --preto:#000000;
 }   
 
 body{

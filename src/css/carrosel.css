@@ -84,5 +84,51 @@
     color: var(--cor-branco);
     text-decoration: none;
     font-weight: 700;
+    text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+
+    .carrosel{
+        position: relative;
+    }
+
+    .carrosel__title{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 2em;
+    }
+
+    .swiper{
+        width: 70%;
+        position: static;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: block ;
+        top: 40%;
+        position: absolute;
+    }
+
+    .swiper-button-next{
+        right: 9%;
+    }
+
+    .swiper-button-prev{
+        left:9%;
+    }
+
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+
+    .botoes__ancora{
+        background-color: var(--laranja);
+        padding: 1.5em
+        
+    }
+}

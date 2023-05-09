@@ -39,3 +39,30 @@
     padding-left:2em ;
     opacity: 0.8;
 }
+
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 2em 0;
+    }
+    
+    .contato__titulo{
+        font-size: 24px;
+    }
+
+    .contato__texto{
+        max-width: 310px;
+    }
+
+    .contato__email{
+        width: 30%;
+    }
+
+    .contato__descricao{
+        width: 30%;
+    }
+}

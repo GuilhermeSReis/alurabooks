@@ -21,6 +21,7 @@
             </label>
             
             <ul class="lista-menu">
+                
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item"><a class="lista-menu__link" href="#">Programação</a></li>
                 <li class="lista-menu__item"><a class="lista-menu__link" href="#">Front-end</a></li>
@@ -30,7 +31,28 @@
             </ul>
 
             <img class="cabecalho__logo" src="./src/img/Logo.svg" alt="Logo da Alura Books">
+            <h1 class="container__titulo"><b class="container__titulo-negrito">Alura</b>Books</h1>
         </div>
+
+
+        <ul class="opcoes">
+            <input type="checkbox" name="" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu">
+                    <li class="opcoes__item">Categoria</li>
+                </label>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__item"><a class="lista-menu__link" href="#">Programação</a></li>
+                    <li class="lista-menu__item"><a class="lista-menu__link" href="#">Front-end</a></li>
+                    <li class="lista-menu__item"><a class="lista-menu__link" href="#">Insfraestrutura</a></li>
+                    <li class="lista-menu__item"><a class="lista-menu__link" href="#">Business</a></li>
+                    <li class="lista-menu__item"><a class="lista-menu__link" href="#">Design & Ux</a></li>
+                </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">FAVORITOS</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">MINHA ESTANTE</a></li>
+        </ul>
+
         <div class="container">
             <a  href="#"><img class="cabecalho__img" src="./src/img/Favoritos.svg" alt="Imagem de favorito ou coração"></a>
             <a  href="#"><img class="cabecalho__img" src="./src/img/Compras.svg"   alt="Imagem de compras"></a>
@@ -103,6 +125,11 @@
                 <div class="swiper-slide"><img src="./src/img/MEAN.svg" alt="Livro sobre Angular"></div>
                 <div class="swiper-slide"><img src="./src/img/Tuning.svg" alt="Livro sobre Angular"></div>
             </div>
+
+            <!-- Navegação por button-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
 
         <div class="card">
@@ -144,8 +171,10 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="text" name="" id="" class="contato__email" placeholder="Cadastre seu e-mail">
     
         
@@ -163,10 +192,14 @@
             autoplay: {
                 delay: 6000,
             },
-            slidesPerView: 2,
+            slidesPerView: 3,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         })
     </script>
