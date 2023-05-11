@@ -53,9 +53,9 @@ hr{
 }
 
 @media screen and (min-width:1728px) {
-    .lista-rodape{
-        border-left: 1px solid var(--cinza-claro);
-        padding-left: 1em;
+    .lista__rodape{
+        border-left: 1px solid var(--cinza);
+        padding-left:3em ;
     }
 
     .rodape{
