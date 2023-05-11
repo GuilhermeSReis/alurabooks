@@ -89,10 +89,6 @@
 
 @media screen and (min-width: 1024px) {
 
-    .carrosel{
-        position: relative;
-    }
-
     .carrosel__title{
         font-size: 26px;
     }
@@ -103,23 +99,14 @@
 
     .swiper{
         width: 70%;
-        position: static;
     }
 
     .swiper-button-next,
     .swiper-button-prev{
-        display: block ;
-        top: 40%;
-        position: absolute;
+        display: block;
+        
     }
 
-    .swiper-button-next{
-        right: 9%;
-    }
-
-    .swiper-button-prev{
-        left:9%;
-    }
 
     .card{
         width: 40%;
@@ -128,7 +115,43 @@
 
     .botoes__ancora{
         background-color: var(--laranja);
-        padding: 1.5em
+        padding: 1.5em;
         
     }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .carrosel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+    .swiper-pagination{
+        margin: 1.5em 0;
+    }
+    .swiper{
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    .descricao{
+        margin: 2em;
+    }
+
+    .descricao__title{
+        font-size: 32px;
+    }
+
+    .descricao__texto{
+        font-size: 16px;
+    }
+
+
+
+    .card{
+        width: 60%;
+        margin-left: 3em;
+    }
+    
 }

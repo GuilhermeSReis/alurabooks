@@ -90,6 +90,10 @@
     display: none;
 }
 
+.container__texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     
     .cabecalho{
@@ -155,3 +159,30 @@
 
 }
 
+
+@media screen and (min-width:1728px) {
+
+    .cabecalho{
+        padding: 2em 4em;
+    }
+
+    .container a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-left: 1em;
+    }
+
+    .container__texto{
+        display: block;
+        color: var(--preto);
+        font-size: 20px;
+        
+    }
+
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+}
