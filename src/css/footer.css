@@ -8,3 +8,45 @@ hr{
     background: transparent;
 }
 
+.lista__rodape{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+
+    .rodape__titulo{
+        font-size: 24px;
+    
+    }
+
+    .lista__rodape{
+        display: block;
+    }
+
+    .lista__rodape__titulo{
+        margin-bottom: 1.5em;
+        font-size: 14px;
+        color: var(--cinza);
+        text-transform: uppercase;
+    }
+
+    .lista__rodape__item{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        padding-bottom:0.6em ;    
+    }
+
+    .lista__rodape__link{
+        color: var(--cinza);
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+}
